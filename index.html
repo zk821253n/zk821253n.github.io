@@ -1,0 +1,1114 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>海角 姐弟一世情-长文阅读与读者讨论</title>
+<meta name="description" content="海角 姐弟一世情是连载于海角社区的长篇家庭情感故事，围绕姐姐林晚与弟弟林舟二十年成长展开。整理章节时间线、人物关系、关键情节解析、读者评论与阅读顺序指南，帮助新读者快速进入。">
+<meta name="keywords" content="海角 姐弟一世情">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232b4a63'/%3E%3Cpath d='M14 42c8-14 14-20 18-18s3 10 8 10 6-6 10-2' fill='none' stroke='%23f2c14e' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1f2a30;
+  --ink-soft:#41525c;
+  --muted:#6d7f89;
+  --paper:#fbf8f2;
+  --paper-2:#f2ece0;
+  --line:#dfd6c6;
+  --brand:#2b4a63;
+  --brand-deep:#1d3444;
+  --accent:#c9702c;
+  --accent-soft:#f6e3cf;
+  --gold:#f2c14e;
+  --ok:#3f7a5c;
+  --warn:#a8542f;
+  --radius:14px;
+  --radius-sm:8px;
+  --shadow:0 6px 20px rgba(31,42,48,.08);
+  --shadow-sm:0 2px 8px rgba(31,42,48,.06);
+  --gap:22px;
+  --font:"Songti SC","Noto Serif SC",Georgia,"SimSun",serif;
+  --font-ui:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  --anchor-offset:118px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--anchor-offset)}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--font);font-size:16.5px;line-height:1.85;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{line-height:1.4;margin:0}
+p{margin:0 0 14px}
+ul,ol{margin:0 0 14px;padding-left:22px}
+li{margin-bottom:6px}
+button{font-family:var(--font-ui)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+/* ---------- 吸顶：公告条 + 页头 ---------- */
+.sticky-stack{position:sticky;top:0;z-index:80}
+.announce{
+  background:var(--brand-deep);color:#e9e2d4;
+  font-family:var(--font-ui);font-size:13.5px;line-height:1.5;
+  padding:8px 0;
+}
+.announce .wrap{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.announce .badge{
+  background:var(--gold);color:#33280a;font-weight:700;
+  border-radius:999px;padding:1px 10px;font-size:12px;letter-spacing:.5px;white-space:nowrap;
+}
+.announce a{color:#f6e3cf;text-decoration:underline;text-underline-offset:3px}
+.announce .when{color:#a9b8c1;white-space:nowrap}
+
+.site-head{background:rgba(251,248,242,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);box-shadow:var(--shadow-sm)}
+.head-inner{display:flex;align-items:center;gap:18px;min-height:64px;padding:10px 0}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.brand svg{width:40px;height:40px;flex-shrink:0}
+.brand-text{display:flex;flex-direction:column;line-height:1.2}
+.brand-text b{font-family:var(--font-ui);font-size:17px;letter-spacing:1px;color:var(--brand-deep)}
+.brand-text span{font-family:var(--font-ui);font-size:11px;color:var(--muted);letter-spacing:2px}
+.main-nav{flex:1;display:flex;gap:4px;flex-wrap:wrap}
+.main-nav a{
+  font-family:var(--font-ui);font-size:14px;color:var(--ink-soft);
+  padding:7px 11px;border-radius:999px;white-space:nowrap;
+}
+.main-nav a:hover{background:var(--paper-2);text-decoration:none;color:var(--brand-deep)}
+.head-tools{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.search-box{position:relative;display:flex;align-items:center}
+.search-box input{
+  width:186px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;
+  font-family:var(--font-ui);font-size:13.5px;background:#fff;color:var(--ink);
+}
+.search-box input::placeholder{color:#9aa8b0}
+.search-feedback{
+  position:absolute;top:calc(100% + 6px);right:0;width:250px;background:#fff;
+  border:1px solid var(--line);border-radius:var(--radius-sm);box-shadow:var(--shadow);
+  padding:10px 12px;font-family:var(--font-ui);font-size:13px;color:var(--ink-soft);display:none;z-index:90;
+}
+.search-feedback.show{display:block}
+.search-feedback ul{margin:6px 0 0;padding-left:18px}
+.menu-btn{
+  display:none;background:var(--brand);color:#fff;border:none;border-radius:var(--radius-sm);
+  padding:9px 14px;font-size:14px;cursor:pointer;
+}
+.side-btn{
+  display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:#fff;
+  font-family:var(--font-ui);font-size:13.5px;padding:8px 14px;border-radius:999px;white-space:nowrap;
+}
+.side-btn:hover{text-decoration:none;background:#b3611f}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  background:linear-gradient(160deg,#22415a 0%,#2b4a63 46%,#3c6079 100%);
+  color:#f4eee2;padding:56px 0 46px;
+}
+.hero-inner{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-family:var(--font-ui);font-size:12.5px;
+  letter-spacing:2px;color:var(--gold);border:1px solid rgba(242,193,78,.5);
+  border-radius:999px;padding:3px 12px;margin-bottom:16px;
+}
+.hero h1{
+  font-size:clamp(30px,4.2vw,46px);letter-spacing:2px;color:#fff;margin-bottom:16px;
+}
+.hero h1 small{display:block;font-size:15px;letter-spacing:3px;color:#c8d6de;font-weight:400;margin-top:8px;font-family:var(--font-ui)}
+.hero-lead{font-size:16.5px;color:#dfe7ea;max-width:36em;margin-bottom:22px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px}
+.btn{
+  font-family:var(--font-ui);font-size:14.5px;padding:11px 22px;border-radius:999px;
+  border:1px solid transparent;display:inline-flex;align-items:center;gap:8px;
+}
+.btn-primary{background:var(--gold);color:#31260a;font-weight:700}
+.btn-primary:hover{background:#f7d075;text-decoration:none}
+.btn-ghost{border-color:rgba(244,238,226,.55);color:#f4eee2}
+.btn-ghost:hover{background:rgba(244,238,226,.12);text-decoration:none}
+.hero-stats{display:flex;gap:26px;flex-wrap:wrap;font-family:var(--font-ui)}
+.hero-stats div{min-width:78px}
+.hero-stats b{display:block;font-size:22px;color:var(--gold);letter-spacing:.5px}
+.hero-stats span{font-size:12px;color:#b9c8d0;letter-spacing:1px}
+.hero-art{position:relative;min-height:300px;display:flex;align-items:center;justify-content:center}
+.hero-art svg{width:100%;max-width:360px;height:auto;filter:drop-shadow(0 10px 24px rgba(0,0,0,.28))}
+
+/* ---------- 布局 ---------- */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:34px;padding:44px 0 20px;align-items:start}
+.content{min-width:0}
+.sidebar{position:sticky;top:var(--anchor-offset);display:flex;flex-direction:column;gap:20px}
+
+section.block{margin-bottom:52px;scroll-margin-top:var(--anchor-offset)}
+.block-head{display:flex;align-items:baseline;gap:14px;margin-bottom:6px;flex-wrap:wrap}
+.block-head h2{font-size:23px;letter-spacing:1px;color:var(--brand-deep)}
+.block-head .en{font-family:var(--font-ui);font-size:11.5px;letter-spacing:2.5px;color:var(--muted);text-transform:uppercase}
+.block-sub{font-family:var(--font-ui);font-size:13.5px;color:var(--muted);margin:0 0 20px}
+.rule{height:1px;background:var(--line);margin:0 0 20px}
+
+/* 卡片 */
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm)}
+.pad{padding:20px 22px}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--gap)}
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.grid-4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.tag{
+  display:inline-block;font-family:var(--font-ui);font-size:12px;line-height:1.6;
+  background:var(--paper-2);color:var(--ink-soft);border-radius:999px;padding:2px 10px;margin:0 6px 6px 0;
+}
+.tag-accent{background:var(--accent-soft);color:#8a4a17}
+.tag-ok{background:#e3efe7;color:var(--ok)}
+.tag-warn{background:#f6e1d8;color:var(--warn)}
+.meta{font-family:var(--font-ui);font-size:12.5px;color:var(--muted)}
+.meta b{color:var(--ink-soft);font-weight:600}
+
+/* 领域概览 */
+.overview-card{padding:22px 24px;border-left:4px solid var(--brand);background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-sm)}
+.overview-card p:last-child{margin-bottom:0}
+.fact-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}
+.fact{background:var(--paper-2);border-radius:var(--radius-sm);padding:10px 12px;font-family:var(--font-ui)}
+.fact b{display:block;font-size:18px;color:var(--brand-deep)}
+.fact span{font-size:12px;color:var(--muted)}
+
+/* 精选推荐 */
+.pick{display:flex;flex-direction:column;overflow:hidden}
+.pick img{width:100%;height:150px;object-fit:cover}
+.pick .pad{padding:16px 18px;flex:1;display:flex;flex-direction:column}
+.pick h3{font-size:16.5px;margin-bottom:8px;color:var(--brand-deep)}
+.pick p{font-size:14px;color:var(--ink-soft);margin-bottom:12px;flex:1}
+.pick .meta{margin-top:auto}
+
+/* 最新更新 紧凑列表 */
+.updates{list-style:none;padding:0;margin:0}
+.updates li{display:grid;grid-template-columns:92px 1fr auto;gap:14px;align-items:baseline;padding:13px 0;border-bottom:1px dashed var(--line)}
+.updates li:last-child{border-bottom:none}
+.updates .d{font-family:var(--font-ui);font-size:12.5px;color:var(--muted);white-space:nowrap}
+.updates .t{font-size:15.5px}
+.updates .t b{color:var(--brand-deep)}
+.updates .u{font-family:var(--font-ui);font-size:12px;color:var(--accent);white-space:nowrap}
+
+/* 分类入口 标签索引 */
+.cat-index{display:flex;flex-wrap:wrap;gap:10px}
+.cat-index a{
+  display:flex;flex-direction:column;gap:2px;background:#fff;border:1px solid var(--line);
+  border-radius:var(--radius-sm);padding:10px 16px;min-width:132px;transition:transform .18s,border-color .18s;
+}
+.cat-index a:hover{transform:translateY(-2px);border-color:var(--accent);text-decoration:none}
+.cat-index b{font-size:15px;color:var(--brand-deep)}
+.cat-index span{font-family:var(--font-ui);font-size:11.5px;color:var(--muted)}
+
+/* 深度解析 */
+.deep{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 28px;box-shadow:var(--shadow-sm)}
+.deep h3{font-size:18px;color:var(--brand-deep);margin:26px 0 10px;padding-left:12px;border-left:3px solid var(--accent)}
+.deep h3:first-of-type{margin-top:6px}
+.deep figure{margin:0 0 18px;background:var(--paper-2);border-radius:var(--radius-sm);padding:14px 16px;font-family:var(--font-ui);font-size:13.5px;color:var(--ink-soft)}
+.deep figure b{color:var(--brand-deep)}
+.claim{background:#fdf6ec;border:1px dashed var(--accent);border-radius:var(--radius-sm);padding:14px 16px;margin:16px 0}
+.claim strong{color:#8a4a17}
+.quote{border-left:3px solid var(--brand);background:var(--paper-2);padding:14px 18px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:15px;color:var(--ink-soft);margin:16px 0}
+.quote cite{display:block;font-family:var(--font-ui);font-size:12.5px;color:var(--muted);font-style:normal;margin-top:6px}
+table.cmp{width:100%;border-collapse:collapse;font-family:var(--font-ui);font-size:13.5px;margin:8px 0 18px}
+table.cmp th,table.cmp td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+table.cmp th{background:var(--paper-2);color:var(--brand-deep);font-weight:600}
+
+/* 步骤 */
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:38px 1fr;gap:14px;background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px 16px}
+.steps li::before{
+  content:counter(s);display:flex;align-items:center;justify-content:center;
+  width:34px;height:34px;border-radius:50%;background:var(--brand);color:#fff;
+  font-family:var(--font-ui);font-size:14px;font-weight:700;
+}
+.steps h3{font-size:15.5px;margin-bottom:4px;color:var(--brand-deep)}
+.steps p{font-size:14px;margin:0;color:var(--ink-soft)}
+
+/* FAQ */
+details.faq{background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);margin-bottom:10px;overflow:hidden}
+details.faq summary{
+  cursor:pointer;list-style:none;padding:14px 18px;font-size:15.5px;font-weight:600;color:var(--brand-deep);
+  display:flex;justify-content:space-between;gap:12px;align-items:center;font-family:var(--font-ui);
+}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{content:"＋";color:var(--accent);font-size:17px;flex-shrink:0}
+details.faq[open] summary::after{content:"－"}
+details.faq .ans{padding:0 18px 16px;font-size:14.5px;color:var(--ink-soft)}
+details.faq .ans p:last-child{margin-bottom:0}
+
+/* 评论 */
+.comments{display:grid;gap:12px}
+.cmt{background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px 16px}
+.cmt-head{display:flex;align-items:center;gap:10px;margin-bottom:6px;flex-wrap:wrap}
+.avatar{
+  width:32px;height:32px;border-radius:50%;background:var(--paper-2);color:var(--brand-deep);
+  display:flex;align-items:center;justify-content:center;font-family:var(--font-ui);font-size:13px;font-weight:700;flex-shrink:0;
+}
+.cmt-head b{font-family:var(--font-ui);font-size:13.5px;color:var(--ink)}
+.cmt p{font-size:14.5px;margin:0 0 6px}
+.cmt .ref{font-family:var(--font-ui);font-size:12px;color:var(--accent)}
+.cmt.mid{background:var(--paper-2)}
+
+/* 资讯列表 */
+.news{list-style:none;padding:0;margin:0}
+.news li{padding:14px 0;border-bottom:1px solid var(--line)}
+.news li:last-child{border-bottom:none}
+.news .n-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.news .n-head b{font-size:15.5px;color:var(--brand-deep)}
+.news p{font-size:14px;color:var(--ink-soft);margin:4px 0 0}
+
+/* 时间线 */
+.timeline{list-style:none;padding:0;margin:0;position:relative}
+.timeline::before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.timeline li{position:relative;padding:0 0 18px 32px}
+.timeline li::before{content:"";position:absolute;left:3px;top:8px;width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--brand)}
+.timeline b{display:block;font-family:var(--font-ui);font-size:13px;color:var(--accent);letter-spacing:.5px}
+.timeline p{font-size:14.5px;margin:2px 0 0}
+
+/* 榜单 / 对照 */
+.rank{list-style:none;padding:0;margin:0;counter-reset:r}
+.rank li{counter-increment:r;display:grid;grid-template-columns:32px 1fr auto;gap:12px;align-items:center;padding:11px 0;border-bottom:1px dashed var(--line)}
+.rank li:last-child{border-bottom:none}
+.rank li::before{content:counter(r);font-family:var(--font-ui);font-weight:700;color:var(--brand);font-size:16px;text-align:center}
+.rank .bar{height:6px;background:var(--paper-2);border-radius:999px;overflow:hidden;width:110px}
+.rank .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--brand),var(--accent))}
+.rank small{font-family:var(--font-ui);font-size:11.5px;color:var(--muted)}
+
+/* 侧栏 */
+.side-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow-sm)}
+.side-card h2,.side-card h3{font-size:15px;color:var(--brand-deep);margin-bottom:12px;font-family:var(--font-ui);letter-spacing:.5px}
+.side-nav{display:flex;flex-direction:column;gap:2px}
+.side-nav a{
+  font-family:var(--font-ui);font-size:13.5px;color:var(--ink-soft);padding:7px 10px;border-radius:6px;border-left:3px solid transparent;
+}
+.side-nav a:hover{background:var(--paper-2);text-decoration:none}
+.side-nav a.active{background:var(--accent-soft);color:#8a4a17;border-left-color:var(--accent);font-weight:600}
+.side-list{list-style:none;padding:0;margin:0;font-family:var(--font-ui);font-size:13.5px}
+.side-list li{padding:8px 0;border-bottom:1px dashed var(--line)}
+.side-list li:last-child{border-bottom:none}
+.side-list a{color:var(--ink-soft)}
+.side-list .meta{display:block}
+.side-note{font-family:var(--font-ui);font-size:12.5px;color:var(--muted);line-height:1.7}
+
+/* 页脚 */
+.site-foot{background:var(--brand-deep);color:#c8d5dc;margin-top:30px;padding:44px 0 26px;font-family:var(--font-ui)}
+.foot-grid{display:grid;grid-template-columns:1.3fr repeat(3,1fr);gap:30px}
+.foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.foot-brand svg{width:34px;height:34px}
+.foot-brand b{color:#fff;font-size:16px;letter-spacing:1px}
+.foot-desc{font-size:13.5px;line-height:1.8;color:#a9bcc6;max-width:34em}
+.foot-col h3{font-size:13.5px;color:var(--gold);letter-spacing:1px;margin-bottom:10px}
+.foot-col ul{list-style:none;padding:0;margin:0}
+.foot-col li{margin-bottom:7px}
+.foot-col a{color:#c8d5dc;font-size:13.5px}
+.foot-col a:hover{color:#fff}
+.foot-note{border-top:1px solid rgba(200,213,220,.18);margin-top:30px;padding-top:18px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12.5px;color:#8fa4b0}
+.foot-note a{color:#a9bcc6}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:18px;bottom:22px;width:44px;height:44px;border-radius:50%;
+  background:var(--brand);color:#fff;border:none;cursor:pointer;font-size:18px;
+  display:none;align-items:center;justify-content:center;box-shadow:var(--shadow);z-index:70;
+}
+.to-top.show{display:flex}
+.to-top:hover{background:var(--brand-deep)}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1024px){
+  .layout{grid-template-columns:1fr;gap:0}
+  .sidebar{position:static;margin-top:10px;order:2}
+  .hero-inner{grid-template-columns:1fr;gap:22px}
+  .hero-art{min-height:220px;order:-1;opacity:.92}
+  .hero-art svg{max-width:260px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .grid-4{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:760px){
+  body{font-size:16px}
+  .menu-btn{display:inline-block}
+  .main-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;background:#fff;
+    border-bottom:1px solid var(--line);box-shadow:var(--shadow);padding:10px 16px;gap:2px;
+  }
+  .main-nav.open{display:flex;flex-direction:column}
+  .main-nav a{padding:10px 12px;border-radius:6px;font-size:15px}
+  .head-inner{position:relative;flex-wrap:wrap}
+  .search-box input{width:150px}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .fact-row{grid-template-columns:1fr 1fr}
+  .updates li{grid-template-columns:1fr;gap:2px}
+  .updates .u{justify-self:start}
+  .hero{padding:38px 0 32px}
+  .deep{padding:20px 18px}
+  .foot-grid{grid-template-columns:1fr}
+  .rank li{grid-template-columns:26px 1fr;gap:8px}
+  .rank .bar{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none !important;animation:none !important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-stack">
+  <div class="announce" role="region" aria-label="更新公告">
+    <div class="wrap">
+      <span class="badge">更新</span>
+      <span>第 47 章《旧相册里的冬天》已于 <time datetime="2026-11-06">11月6日</time> 发布，姐姐林晚的信件线开启第三阶段。</span>
+      <span class="when">2026-11-08 整理</span>
+      <a href="/#latest">看更新列表</a>
+    </div>
+  </div>
+
+  <header class="site-head">
+    <div class="wrap head-inner">
+      <a class="brand" href="/#top" aria-label="海角 姐弟一世情 首页">
+        <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#2b4a63"/>
+          <path d="M12 44c8-16 14-22 18-20s3 11 8 11 6-7 11-3" fill="none" stroke="#f2c14e" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="21" cy="22" r="3.2" fill="#c9702c"/>
+        </svg>
+        <span class="brand-text">
+          <b>海角 姐弟一世情</b>
+          <span>故事档案</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <a href="/#overview">故事概览</a>
+        <a href="/#picks">精选</a>
+        <a href="/#latest">更新</a>
+        <a href="/#cats">分类</a>
+        <a href="/#deep">深度</a>
+        <a href="/#guide">阅读指南</a>
+        <a href="/#faq">问答</a>
+        <a href="/#comments">读者说</a>
+        <a href="/#news">资讯</a>
+      </nav>
+
+      <div class="head-tools">
+        <div class="search-box">
+          <label for="siteSearch" class="sr-only">站内搜索</label>
+          <input id="siteSearch" type="search" placeholder="搜人物、章节、关键词" autocomplete="off">
+          <div class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></div>
+        </div>
+        <a class="side-btn" href="/#latest">阅读目录</a>
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">目录</button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero" aria-label="开篇">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <span class="hero-eyebrow">长篇家庭情感 · 连载档案</span>
+        <h1>海角 姐弟一世情
+          <small>姐姐林晚与弟弟林舟的二十年</small>
+        </h1>
+        <p class="hero-lead">一个从江南小城搬到沿海渔镇的家庭，姐姐林晚十六岁那年替母亲撑起鱼摊，弟弟林舟还在念小学。故事从1998年的一条旧巷开始，写到两人各自成家后的再见面，中间隔着一次搬家、一场病、一封没寄出的信。</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="/#deep">读核心解析</a>
+          <a class="btn btn-ghost" href="/#guide">新读者顺序</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>47</b><span>已发章节</span></div>
+          <div><b>12</b><span>时间节点</span></div>
+          <div><b>6</b><span>主要人物</span></div>
+          <div><b>1998—2026</b><span>故事跨度</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 360 320" role="img">
+          <defs>
+            <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#3c6079" stop-opacity=".9"/>
+              <stop offset="1" stop-color="#16303f" stop-opacity=".95"/>
+            </linearGradient>
+          </defs>
+          <circle cx="262" cy="72" r="30" fill="#f2c14e" opacity=".85"/>
+          <path d="M0 210c60-16 108 10 168-4s104-26 192-6v120H0Z" fill="url(#sea)"/>
+          <path d="M0 226c58-14 104 8 164-4s108-22 196-4" fill="none" stroke="#8fb2c4" stroke-width="2" opacity=".7"/>
+          <path d="M36 214V132l26-18 26 18v82" fill="none" stroke="#e9e2d4" stroke-width="3.5" stroke-linejoin="round"/>
+          <path d="M48 214v-34h28v34" fill="none" stroke="#e9e2d4" stroke-width="2.5"/>
+          <path d="M92 214l40-92 40 92" fill="none" stroke="#c9702c" stroke-width="3.5" stroke-linejoin="round"/>
+          <path d="M110 214v-40h44v40" fill="none" stroke="#f2c14e" stroke-width="2.5"/>
+          <path d="M196 214V150c0-12 10-22 22-22s22 10 22 22v64" fill="none" stroke="#e9e2d4" stroke-width="3"/>
+          <line x1="18" y1="214" x2="344" y2="214" stroke="#e9e2d4" stroke-width="2.5" stroke-dasharray="2 9" stroke-linecap="round"/>
+          <path d="M226 26c10 14 24 20 38 22-14 2-28 8-38 22-10-14-24-20-38-22 14-2 28-8 38-22Z" fill="#f2c14e" opacity=".5"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap layout">
+    <div class="content">
+
+      <!-- 1 领域概览 -->
+      <section class="block" id="overview">
+        <div class="block-head">
+          <h2>故事概览与人物关系</h2>
+          <span class="en">Overview</span>
+        </div>
+        <p class="block-sub">先弄清谁是谁、住在哪、各自在哪个年份做了什么，再谈情节。</p>
+        <div class="overview-card">
+          <p>故事的主轴是江南青塘巷的一户四口之家：父亲林建国跑水产运输，母亲周素芬摆鱼摊，姐姐林晚生于1982年，弟弟林舟生于1990年。1998年夏，父亲生意亏空，一家人搬到临海的芦湾镇。那年林晚十六岁，开始在镇菜场替母亲守摊；林舟八岁，转入芦湾小学三年级。</p>
+          <p>全书目前四十七个章节，按年份分三段：1998—2006年的成长期，2007—2015年的分离期，2016年至今的重逢与和解。作者用姐姐的书信、弟弟的手机备忘录、母亲记的流水账三种文本交替推进，读者常把这三条线称作“信线”“备忘线”“账本线”。</p>
+          <div class="fact-row">
+            <div class="fact"><b>林晚</b><span>姐姐｜1982年生｜菜场鱼摊</span></div>
+            <div class="fact"><b>林舟</b><span>弟弟｜1990年生｜修船厂技工</span></div>
+            <div class="fact"><b>周素芬</b><span>母亲｜1958年生｜账本记录者</span></div>
+            <div class="fact"><b>芦湾镇</b><span>主要场景｜临海渔镇</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2 精选内容推荐 -->
+      <section class="block" id="picks">
+        <div class="block-head">
+          <h2>精选内容推荐</h2>
+          <span class="en">Featured</span>
+        </div>
+        <p class="block-sub">四个入口分别对应入门、考据、情感线和版本差异，按需求选择。</p>
+        <div class="grid-2">
+          <article class="card pick">
+            <img src="https://picsum.photos/seed/haijiao-jiedi-guide/560/320" width="560" height="320" loading="lazy" alt="芦湾镇旧菜场清晨的鱼摊，木桌与塑料盆排列">
+            <div class="pad">
+              <h3>林晚与林舟关系变化的时间线</h3>
+              <p>从1998年姐姐替弟弟交学费，到2014年两人因拆迁款争吵，再到2021年林舟登门送药。八处转折全部标出章节位置。</p>
+              <div class="meta"><b>时间线</b> · 8 个节点 · 更新于 11-06</div>
+            </div>
+          </article>
+          <article class="card pick">
+            <img src="https://picsum.photos/seed/haijiao-xinjian/560/320" width="560" height="320" loading="lazy" alt="摊开的旧信纸与钢笔，纸边泛黄">
+            <div class="pad">
+              <h3>“信线”里没寄出的十七封信</h3>
+              <p>林晚写给弟弟却没交出的信件，在第 9、21、33 章三次出现。逐封核对日期，能看出她态度的移动。</p>
+              <div class="meta"><b>考据</b> · 17 封 · 更新于 11-04</div>
+            </div>
+          </article>
+          <article class="card pick">
+            <img src="https://picsum.photos/seed/haijiao-zhangben/560/320" width="560" height="320" loading="lazy" alt="手写流水账本，横格纸上记录每日收支">
+            <div class="pad">
+              <h3>周素芬账本里的家庭收支</h3>
+              <p>母亲记的账覆盖1998至2010年，共 143 条。鱼摊日收入从 46 元到 210 元，能对上故事里的两次搬家。</p>
+              <div class="meta"><b>账本线</b> · 143 条 · 更新于 11-02</div>
+            </div>
+          </article>
+          <article class="card pick">
+            <img src="https://picsum.photos/seed/haijiao-banben/560/320" width="560" height="320" loading="lazy" alt="两本封面不同的旧书并排放在木桌上">
+            <div class="pad">
+              <h3>网络版与整理版的四处差异</h3>
+              <p>2019年首发版与2024年整理版之间，弟弟的职业、父亲的结局、信件数量都改过。差异逐条列出。</p>
+              <div class="meta"><b>版本</b> · 4 处差异 · 更新于 10-29</div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3 最新更新 -->
+      <section class="block" id="latest">
+        <div class="block-head">
+          <h2>最新更新与章节动态</h2>
+          <span class="en">Latest</span>
+        </div>
+        <p class="block-sub">按时间倒序，只列近三十天内有变化的章节与说明。</p>
+        <ul class="updates">
+          <li>
+            <span class="d">11月6日</span>
+            <span class="t"><b>第 47 章 旧相册里的冬天</b>：林晚在阁楼翻出1999年的合影，照片背面有父亲的笔迹，与账本第 62 条对得上。</span>
+            <span class="u">约 3200 字</span>
+          </li>
+          <li>
+            <span class="d">11月3日</span>
+            <span class="t"><b>第 46 章 修船厂的三天</b>：林舟在厂里连续加班，师父陈国强提起他十六岁第一次上船的细节。</span>
+            <span class="u">约 2800 字</span>
+          </li>
+          <li>
+            <span class="d">10月31日</span>
+            <span class="t"><b>人物页更新</b>：补充母亲周素芬的年龄与工作年份，修正此前“1959年生”的笔误。</span>
+            <span class="u">资料修订</span>
+          </li>
+          <li>
+            <span class="d">10月27日</span>
+            <span class="t"><b>第 45 章 拆迁通知贴上门</b>：芦湾镇老街拆迁公告落款日期为2014年6月18日，引发兄弟俩第一次正面冲突。</span>
+            <span class="u">约 3600 字</span>
+          </li>
+          <li>
+            <span class="d">10月21日</span>
+            <span class="t"><b>第 44 章 迟到的电话</b>：林晚在夜里十一点接到弟弟电话，通话时长 4 分 17 秒，内容留白。</span>
+            <span class="u">约 2400 字</span>
+          </li>
+          <li>
+            <span class="d">10月14日</span>
+            <span class="t"><b>第 43 章 鱼摊换到东头</b>：菜场改造，摊位从西侧第 12 号换到东侧第 3 号，母亲第一次算错账。</span>
+            <span class="u">约 3000 字</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 4 分类入口 -->
+      <section class="block" id="cats">
+        <div class="block-head">
+          <h2>按类别进入</h2>
+          <span class="en">Channels</span>
+        </div>
+        <p class="block-sub">十个频道，覆盖人物、场景、文本来源和阅读辅助。</p>
+        <div class="cat-index">
+          <a href="/#deep"><b>人物关系</b><span>林晚 · 林舟 · 周素芬</span></a>
+          <a href="/#deep"><b>章节时间线</b><span>1998—2026 全序</span></a>
+          <a href="/#picks"><b>信件原文</b><span>17 封未寄出</span></a>
+          <a href="/#picks"><b>账本条目</b><span>143 条流水</span></a>
+          <a href="/#news"><b>版本差异</b><span>首发版 / 整理版</span></a>
+          <a href="/#guide"><b>阅读顺序</b><span>新读者四步法</span></a>
+          <a href="/#faq"><b>常见疑问</b><span>8 个问题</span></a>
+          <a href="/#comments"><b>读者讨论</b><span>含争议观点</span></a>
+          <a href="/#timeline"><b>事件年表</b><span>12 个节点</span></a>
+          <a href="/#rank"><b>章节热度</b><span>按引用次数</span></a>
+        </div>
+      </section>
+
+      <!-- 5 深度解析 -->
+      <section class="block" id="deep">
+        <div class="block-head">
+          <h2>深度解析：姐姐为什么一直在让步</h2>
+          <span class="en">Analysis</span>
+        </div>
+        <p class="block-sub">只谈能落到章节、日期和具体句子上的一种判断。</p>
+        <div class="deep">
+          <p>围绕林晚的讨论里，最常出现的一类说法是“她太软弱”。这个判断容易说，但经不起章节核对。把1999年到2014年的六次关键让步列出来，会发现让步的对象和代价完全不同，其中只有两次是真正吃亏。</p>
+
+          <h3>一、六次让步的账目对照</h3>
+          <table class="cmp">
+            <thead>
+              <tr><th>时间</th><th>让步内容</th><th>对方</th><th>可核对结果</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1999年秋</td><td>放弃镇中学的复读名额</td><td>母亲</td><td>账本第 8 条记“学费 480 元未交”，林晚转入菜场帮工</td></tr>
+              <tr><td>2002年</td><td>把打工钱先给弟弟交初中借读费</td><td>林舟</td><td>第 7 章原文“一千二，先紧着他”</td></tr>
+              <tr><td>2006年</td><td>留在芦湾镇，不随同乡去宁波服装厂</td><td>家庭</td><td>第 12 章，同乡阿珍后来在宁波做到组长</td></tr>
+              <tr><td>2011年</td><td>婚房首付让给弟弟</td><td>林舟</td><td>第 24 章，父母出 6 万，林晚出 3 万</td></tr>
+              <tr><td>2014年</td><td>拆迁款分配中退让</td><td>林舟与母亲</td><td>第 45 章，弟弟拿七成，她拿三成</td></tr>
+              <tr><td>2021年</td><td>主动上门照看生病母亲</td><td>母亲</td><td>第 52 章尚未发布，预告在作者 10 月 30 日的更新说明里</td></tr>
+            </tbody>
+          </table>
+          <p>这六次里，1999年和2006年的两次几乎没有换回任何东西，是结构性损失；2002年、2011年、2014年三次则带着交换条件——弟弟后来承担了母亲的医药费、每年冬天寄海货。第 41 章林舟自己的备忘录写着“姐出三万，我记着”，说明这笔账在他那边也是清楚的。</p>
+
+          <div class="claim">
+            <strong>可被反驳的判断：</strong>林晚的让步不是性格问题，而是1998年家庭搬到芦湾镇后形成的资源分配规则——家里只有一个孩子的上升通道，姐姐被默认排在后面。判断依据是账本前 30 条里“晚”字出现 22 次，全部与支出或帮工相关，没有一次与学费或培训相关。
+          </div>
+
+          <h3>二、账本第 8 条与第 62 条，写法不一样</h3>
+          <p>同样是记钱，周素芬在账本第 8 条写的是“晚复读费 480，未交”，语气干脆；到第 62 条记父亲住院时，写的是“晚垫 1200，舟知”。多了“舟知”两个字。这两个字是全书的转折提示：从这一条起，母亲的记录开始把姐弟放在同一行。第 47 章新出的旧相册页面背面，父亲写的也是“晚、舟”，顺序没变，但并列了。</p>
+
+          <figure>
+            <b>可核对项：</b>账本 143 条记录中，出现“舟”字的有 51 条，出现“晚”字的有 46 条；1998—2003 年“晚”字条目占该时段 71%，2008 年之后降到 28%。比例变化能独立复算，不依赖读者感受。
+          </figure>
+
+          <h3>三、争议点：2014年拆迁款是让步还是妥协</h3>
+          <p>第 45 章贴出拆迁通知后，姐弟俩在堂屋吵了一架。原文写林晚“没再争”，弟弟“把烟按在门槛上”。有读者据此认为林晚彻底退让；也有读者注意到同一章里她拿走了母亲账本和父亲的旧相册，这两样东西后来都成了第 47 章的关键物证。</p>
+          <p>按章节时间核对：拆迁公告落款2014年6月18日，争吵发生在6月21日，签协议是7月2日。中间十一天里，第 46 章补写了林舟去修船厂找师父借钱的一段。也就是说，这十一天并非空白，让步发生在信息不全的情况下。把它读成“软弱”，忽略了她在同一段时间里保住的两件实物。</p>
+
+          <div class="quote">
+            林晚在第 45 章的原话是“钱你拿着，妈我来管”，语气不软。第 52 章预告里，她果然把母亲接到了自己家。
+            <cite>—— 第 45 章，堂屋争吵段</cite>
+          </div>
+
+          <h3>四、把判断拆成可核对的清单</h3>
+          <p>要验证“规则说”而非“性格说”，可以只看四个硬指标：一是她是否曾为自己争取过至少一次，答案是2006年她问过宁波服装厂的招工条件，记在第 12 章；二是她损失的钱是否被对方记账，答案是被记了，见第 41 章备忘录；三是她的选择是否随时间收紧，答案是2008年后她开始自己存钱，账本 2009 年 3 月出现“晚存 500”的独立条目；四是她是否影响下一代，答案是第 44 章她女儿在作文里写“妈妈总说先顾别人”，这句被老师批了“再想想”。</p>
+          <p>四项里若有两项为否，规则说就不成立。目前四项都能在章节里找到对应句子，所以这个判断站得住，但它仍可能被后续章节推翻——第 52 章一旦发布，母亲搬去谁家、医药费怎么分，会直接影响第三、第四项的权重。</p>
+        </div>
+      </section>
+
+      <!-- 6 体验指南 -->
+      <section class="block" id="guide">
+        <div class="block-head">
+          <h2>新读者阅读指南</h2>
+          <span class="en">Reading Guide</span>
+        </div>
+        <p class="block-sub">四步走完，能避开前二十章最常卡住的地方。</p>
+        <ol class="steps">
+          <li>
+            <div>
+              <h3>先读第 1、2、3 章，认清芦湾镇的地理</h3>
+              <p>菜场在西头，修船厂在东头，中间隔着一条排水渠。前二十章的争吵大多发生在这条渠两侧，位置弄混会看不懂谁“顺路”去看谁。</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>把三条文本线分开记</h3>
+              <p>信线是林晚视角，备忘线是林舟视角，账本线是母亲视角。三条线的时间不总对齐，第 21 章信里写“今年冬天”，账本对应的是1999年12月而非2000年1月。</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>读到第 24 章时回头查账本第 40—55 条</h3>
+              <p>婚房首付那笔钱的来源分散在三处：父母出 6 万，林晚出 3 万，林舟自己借 2 万。单看第 24 章会以为全是父母的。</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>第 45 章之后放慢速度</h3>
+              <p>2014年拆迁段信息密度最高，涉及公告日期、协议签署日、弟弟借款日三个时间点。建议先看时间线板块，再回读正文。</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- 7 FAQ -->
+      <section class="block" id="faq">
+        <div class="block-head">
+          <h2>常见问题</h2>
+          <span class="en">FAQ</span>
+        </div>
+        <p class="block-sub">八条问题，答案尽量落到章节与日期上。</p>
+
+        <details class="faq">
+          <summary>林晚和林舟相差几岁，这个年龄差重要吗？</summary>
+          <div class="ans"><p>相差八岁，林晚1982年生，林舟1990年生。年龄差在1998年搬家时最关键：姐姐十六岁已能帮工，弟弟八岁只能被动跟随。全书对“八岁”的直接提及有两次，一次在第 2 章母亲的话里，一次在第 33 章林晚的信里。</p></div>
+        </details>
+        <details class="faq">
+          <summary>故事里提到的芦湾镇在现实中存在吗？</summary>
+          <div class="ans"><p>作者在第 1 章开头的说明里写明这是虚构地名，参照的是浙东沿海几个渔镇的菜场格局。文中出现的“西头第 12 号摊”“排水渠”“修船厂”属于设定，不对应具体港口。</p></div>
+        </details>
+        <details class="faq">
+          <summary>“信线”和“账本线”哪个先写？</summary>
+          <div class="ans"><p>按时间顺序是账本线在先。账本记录从1998年6月开始，最早一封信落款是1999年9月。但发布时间上，信线在第 9 章才集中出现，所以初读会先遇到账本条目。</p></div>
+        </details>
+        <details class="faq">
+          <summary>2014年拆迁款的分配比例是多少？</summary>
+          <div class="ans"><p>第 45 章写的是弟弟七成、姐姐三成，总额 42 万。母亲那份由两人均摊赡养，账本第 118 条记有“妈的生活费，各半”。这个比例是姐弟争吵后的结果，不是最初的方案。</p></div>
+        </details>
+        <details class="faq">
+          <summary>为什么弟弟的职业在早期版本里是“销售”？</summary>
+          <div class="ans"><p>2019年首发版第 12 章写林舟在城里做销售，2024年整理版改为修船厂技工。作者在整理版后记里说明：技工身份与父亲跑水产运输的家庭背景更贴合，也解释了第 46 章的加班情节。</p></div>
+        </details>
+        <details class="faq">
+          <summary>父亲林建国的结局有明确交代吗？</summary>
+          <div class="ans"><p>截至第 47 章仍未直接写明。第 47 章只出现他1999年的笔迹和一张合影。第 21 章林晚的信里有一句“他走那年”，但未给年份。作者10月30日的更新说明提到，第 52—55 章会处理这条线。</p></div>
+        </details>
+        <details class="faq">
+          <summary>女儿作文那一段是不是可有可无？</summary>
+          <div class="ans"><p>第 44 章女儿写“妈妈总说先顾别人”，老师批“再想想”。这段在情节上看似闲笔，但它把林晚的行为模式带到了下一代视角，是判断“规则说”成立的第四项指标。</p></div>
+        </details>
+        <details class="faq">
+          <summary>从哪一章开始能看出姐弟关系缓和？</summary>
+          <div class="ans"><p>第 43 章鱼摊换到东头之后。弟弟第一次主动来菜场帮忙收摊，账本记“舟来帮，晚未收钱”。到第 47 章，两人一起翻相册，中间隔了四章，跨度约三个月。</p></div>
+        </details>
+      </section>
+
+      <!-- 8 用户评论 -->
+      <section class="block" id="comments">
+        <div class="block-head">
+          <h2>读者评论</h2>
+          <span class="en">Comments</span>
+        </div>
+        <p class="block-sub">保留不同意见，包括对具体章节的质疑。</p>
+        <div class="comments">
+          <div class="cmt">
+            <div class="cmt-head">
+              <span class="avatar">阿</span>
+              <b>阿岚_芦湾</b>
+              <span class="meta">11月6日 22:14</span>
+            </div>
+            <p>第 47 章那张照片背面的字，和账本第 62 条的“舟知”是同一种写法吧？如果真是父亲写的，那他从1999年就在记姐弟俩的事了。</p>
+            <span class="ref">指向：第 47 章 · 账本第 62 条</span>
+          </div>
+          <div class="cmt mid">
+            <div class="cmt-head">
+              <span class="avatar">老</span>
+              <b>老陈不修船</b>
+              <span class="meta">11月6日 20:02</span>
+            </div>
+            <p>修船厂那段有点出戏。十六岁第一次上船，厂里敢让？我1997年在象山那边干过，没证只能打下手，搬搬氧气瓶。</p>
+            <span class="ref">指向：第 46 章 · 修船厂情节</span>
+          </div>
+          <div class="cmt">
+            <div class="cmt-head">
+              <span class="avatar">周</span>
+              <b>周家三丫头</b>
+              <span class="meta">11月5日 18:40</span>
+            </div>
+            <p>账本 143 条这个数字我数过，更新到第 47 章之后应该是 146 条了，作者在评论区补了三条。希望页面能跟上。</p>
+            <span class="ref">指向：账本条目统计</span>
+          </div>
+          <div class="cmt">
+            <div class="cmt-head">
+              <span class="avatar">木</span>
+              <b>木鱼不敲</b>
+              <span class="meta">11月4日 12:07</span>
+            </div>
+            <p>不太买账“规则说”。林晚2006年明明问过宁波服装厂，问完还是留下了，这就是个人选择，别都推给家庭结构。第 12 章她自己说“我走了摊谁管”，这句话挺主动的。</p>
+            <span class="ref">指向：第 12 章 · 宁波招工</span>
+          </div>
+          <div class="cmt mid">
+            <div class="cmt-head">
+              <span class="avatar">南</span>
+              <b>南岸看潮</b>
+              <span class="meta">11月3日 23:55</span>
+            </div>
+            <p>拆迁那段我重读了三遍。公告6月18日，吵架6月21日，签协议7月2日，中间十一天就写了一章，太赶。第 46 章借钱的情节插在这里，节奏是断的。</p>
+            <span class="ref">指向：第 45—46 章 · 时间衔接</span>
+          </div>
+          <div class="cmt">
+            <div class="cmt-head">
+              <span class="avatar">小</span>
+              <b>小满在海边</b>
+              <span class="meta">11月2日 09:31</span>
+            </div>
+            <p>就喜欢账本那种记法，“晚垫 1200，舟知”，五个字能看出一个家的关系。比大段抒情有用。</p>
+            <span class="ref">指向：账本第 62 条</span>
+          </div>
+          <div class="cmt mid">
+            <div class="cmt-head">
+              <span class="avatar">K</span>
+              <b>Kite_1988</b>
+              <span class="meta">10月30日 21:19</span>
+            </div>
+            <p>版本差异那篇看完了，弟弟从销售改成技工确实更顺，但第 24 章“出差回来”那句没改，读着别扭，希望整理版再校一遍。</p>
+            <span class="ref">指向：2019 首发版 / 2024 整理版</span>
+          </div>
+          <div class="cmt">
+            <div class="cmt-head">
+              <span class="avatar">鱼</span>
+              <b>鱼摊东头三号</b>
+              <span class="meta">10月28日 16:44</span>
+            </div>
+            <p>第 43 章换摊位后母亲第一次算错账，这个细节太真了。我妈当年从西头搬到东头，头一个月也是天天少收钱。</p>
+            <span class="ref">指向：第 43 章 · 菜场改造</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9 相关资讯 -->
+      <section class="block" id="news">
+        <div class="block-head">
+          <h2>相关资讯与版本动态</h2>
+          <span class="en">News</span>
+        </div>
+        <p class="block-sub">只记已发生的事：修订、发布说明、读者活动。</p>
+        <ul class="news">
+          <li>
+            <div class="n-head"><b>整理版第 4 次校订</b><span class="meta">2026-11-05</span></div>
+            <p>校订范围是第 21—26 章，改动 11 处标点与 2 处时间表述。第 24 章“出差”一词保留未改，作者在说明里承认读着别扭，但涉及后续章节引用，暂不动。</p>
+          </li>
+          <li>
+            <div class="n-head"><b>第 46 章情节说明</b><span class="meta">2026-11-03</span></div>
+            <p>针对读者质疑十六岁上船不合规，作者回复：写到的是厂里帮工搬氧气瓶，不是上船操作，原文“第一次上船”表述不准确，下版会改为“第一次进货栈”。</p>
+          </li>
+          <li>
+            <div class="n-head"><b>账本条目补录三条</b><span class="meta">2026-10-30</span></div>
+            <p>补录条目为 1998年7月、2003年4月、2009年3月各一条，总数由 143 增至 146。第 47 章引用到 2009 年那条“晚存 500”。</p>
+          </li>
+          <li>
+            <div class="n-head"><b>时间线页面改版</b><span class="meta">2026-10-26</span></div>
+            <p>12 个节点全部标注章节出处，并新增“可核对项”一栏，标出哪些节点有账本或信件原文支撑。</p>
+          </li>
+          <li>
+            <div class="n-head"><b>读者线上讨论会</b><span class="meta">2026-10-19</span></div>
+            <p>主题是“2014年拆迁段的节奏”，参与 63 人，记录整理为 4 页，未对外发布，仅在读者群内传阅。</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 10 相关推荐 -->
+      <section class="block" id="rec">
+        <div class="block-head">
+          <h2>相关推荐</h2>
+          <span class="en">Related</span>
+        </div>
+        <p class="block-sub">与姐弟线、渔镇场景、账本叙事相关的阅读方向。</p>
+        <div>
+          <a class="tag tag-accent" href="/#deep">姐弟年龄差与家庭资源分配</a>
+          <a class="tag" href="/#picks">林晚未寄出的十七封信</a>
+          <a class="tag" href="/#picks">周素芬流水账本读法</a>
+          <a class="tag" href="/#news">首发版与整理版对照</a>
+          <a class="tag tag-accent" href="/#deep">2014年拆迁款分配争议</a>
+          <a class="tag" href="/#guide">芦湾镇菜场地理对照</a>
+          <a class="tag" href="/#timeline">1998—2026 十二年节点</a>
+          <a class="tag" href="/#rank">被引用最多的五个章节</a>
+          <a class="tag tag-ok" href="/#faq">父亲结局的线索梳理</a>
+          <a class="tag" href="/#comments">读者对“软弱说”的反驳</a>
+        </div>
+      </section>
+
+      <!-- 11 时间线 -->
+      <section class="block" id="timeline">
+        <div class="block-head">
+          <h2>事件年表</h2>
+          <span class="en">Timeline</span>
+        </div>
+        <p class="block-sub">十二个节点，每个都能在章节或账本里找到出处。</p>
+        <ol class="timeline">
+          <li><b>1998年6月</b><p>父亲生意亏空，一家四口从青塘巷搬到芦湾镇，租住菜场后街。账本第 1 条记“搬家车费 35 元”。</p></li>
+          <li><b>1998年7月</b><p>林晚开始在菜场替母亲守摊，摊位西侧第 12 号。第 2 章写她第一次独自收摊时算错 6 元。</p></li>
+          <li><b>1999年9月</b><p>林晚放弃复读，账本第 8 条“复读费 480，未交”。同月写下第一封未寄出的信。</p></li>
+          <li><b>2002年</b><p>弟弟初中借读，林晚把打工钱一千二先垫上。第 7 章原文“先紧着他”。</p></li>
+          <li><b>2006年</b><p>同乡阿珍介绍宁波服装厂招工，林晚问过条件，最终留下。第 12 章。</p></li>
+          <li><b>2009年3月</b><p>账本首次出现林晚独立存款记录“晚存 500”，标志她开始留自己的钱。</p></li>
+          <li><b>2011年</b><p>婚房首付，父母出 6 万，林晚出 3 万，林舟自借 2 万。第 24 章。</p></li>
+          <li><b>2014年6月18日</b><p>芦湾镇老街拆迁公告张贴。第 45 章开头。</p></li>
+          <li><b>2014年7月2日</b><p>拆迁协议签署，弟弟七成、姐姐三成，总额 42 万。</p></li>
+          <li><b>2021年</b><p>母亲生病，林晚主动上门照看，第 52 章预告中的主线。</p></li>
+          <li><b>2026年10月</b><p>整理版第 4 次校订，第 21—26 章改动 11 处标点。</p></li>
+          <li><b>2026年11月6日</b><p>第 47 章发布，旧相册与父亲笔迹出现。</p></li>
+        </ol>
+      </section>
+
+      <!-- 12 榜单 -->
+      <section class="block" id="rank">
+        <div class="block-head">
+          <h2>章节引用热度榜</h2>
+          <span class="en">Ranking</span>
+        </div>
+        <p class="block-sub">按读者讨论区与整理笔记中的被引用次数排序，统计截至11月7日。</p>
+        <ol class="rank">
+          <li><span><b>第 45 章 拆迁通知贴上门</b><br><small>被引用 38 次 · 争议最集中</small></span><span class="bar"><i style="width:100%"></i></span></li>
+          <li><span><b>第 24 章 婚房首付</b><br><small>被引用 29 次 · 账目来源分散</small></span><span class="bar"><i style="width:76%"></i></span></li>
+          <li><span><b>第 12 章 宁波来的招工消息</b><br><small>被引用 24 次 · 主动选择争议</small></span><span class="bar"><i style="width:63%"></i></span></li>
+          <li><span><b>第 43 章 鱼摊换到东头</b><br><small>被引用 19 次 · 细节真实性高</small></span><span class="bar"><i style="width:50%"></i></span></li>
+          <li><span><b>第 21 章 那年冬天的信</b><br><small>被引用 16 次 · 时间线易混</small></span><span class="bar"><i style="width:42%"></i></span></li>
+        </ol>
+      </section>
+
+    </div>
+
+    <!-- 侧栏 -->
+    <aside class="sidebar" aria-label="辅助导航">
+      <div class="side-card">
+        <h2>栏目导航</h2>
+        <nav class="side-nav" id="sideNav" aria-label="侧栏栏目">
+          <a href="/#overview">故事概览</a>
+          <a href="/#picks">精选推荐</a>
+          <a href="/#latest">最新更新</a>
+          <a href="/#cats">分类入口</a>
+          <a href="/#deep">深度解析</a>
+          <a href="/#guide">阅读指南</a>
+          <a href="/#faq">常见问题</a>
+          <a href="/#comments">读者评论</a>
+          <a href="/#news">相关资讯</a>
+          <a href="/#rec">相关推荐</a>
+          <a href="/#timeline">事件年表</a>
+          <a href="/#rank">章节热度</a>
+        </nav>
+      </div>
+
+      <div class="side-card">
+        <h3>本周常查</h3>
+        <ul class="side-list">
+          <li><a href="/#deep">林晚六次让步的账目表</a><span class="meta">深度解析 · 11-06</span></li>
+          <li><a href="/#faq">拆迁款七三分配怎么来的</a><span class="meta">问答 · 11-05</span></li>
+          <li><a href="/#news">十六岁上船情节说明</a><span class="meta">资讯 · 11-03</span></li>
+          <li><a href="/#timeline">1998 到 2026 年表</a><span class="meta">时间线 · 11-02</span></li>
+        </ul>
+      </div>
+
+      <div class="side-card">
+        <h3>资料状态</h3>
+        <p class="side-note">人物页、账本条目与章节索引均按整理版核对。第 52 章未发布，涉及母亲照料的情节以作者更新说明为准，页面标注为“预告”，不作为已发生事实引用。</p>
+        <p class="side-note" style="margin:10px 0 0">最近一次校对：2026-11-07</p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-foot" id="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#f2c14e"/>
+            <path d="M12 44c8-16 14-22 18-20s3 11 8 11 6-7 11-3" fill="none" stroke="#1d3444" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+          <b>海角 姐弟一世情</b>
+        </div>
+        <p class="foot-desc">一个渔镇长姐与幼弟的二十年档案：章节索引、信件与账本原文摘录、可核对的时间节点，以及读者之间的分歧记录。</p>
+      </div>
+      <div class="foot-col">
+        <h3>读故事</h3>
+        <ul>
+          <li><a href="/#overview">人物关系</a></li>
+          <li><a href="/#picks">信件与账本</a></li>
+          <li><a href="/#timeline">事件年表</a></li>
+          <li><a href="/#latest">章节更新</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h3>查资料</h3>
+        <ul>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#news">版本差异</a></li>
+          <li><a href="/#rank">章节热度</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h3>参与</h3>
+        <ul>
+          <li><a href="/#comments">读者评论</a></li>
+          <li><a href="/#guide">阅读指南</a></li>
+          <li><a href="/#rec">相关推荐</a></li>
+          <li><a href="/#cats">全部频道</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>文中章节、账本条目、拆迁款分配与人物生年均为例示整理，第 52 章内容以作者发布为准。页脚更新项对应：第 47 章发布、账本补录三条、第 46 章情节说明。</span>
+      <span>更新时间：2026-11-08 · © 2026 故事档案整理</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部" title="回到顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn = document.getElementById('menuBtn');
+  var mainNav = document.getElementById('mainNav');
+
+  menuBtn.addEventListener('click', function(){
+    var open = mainNav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+
+  mainNav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A' && window.innerWidth <= 760){
+      mainNav.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+    }
+  });
+
+  // 搜索
+  var input = document.getElementById('siteSearch');
+  var fb = document.getElementById('searchFeedback');
+  var index = [];
+  document.querySelectorAll('main h2, main h3, main summary, .updates .t, .news .n-head b, .rank b, .timeline b, .side-list a, .cat-index b, .tag').forEach(function(el){
+    var txt = (el.textContent || '').trim();
+    if(!txt) return;
+    var target = el.closest('section') || el.closest('aside') || el;
+    index.push({text: txt, id: target.id || ''});
+  });
+
+  function esc(s){ return s.replace(/[&<>"]/g, function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
+
+  input.addEventListener('input', function(){
+    var q = input.value.trim();
+    if(!q){ fb.classList.remove('show'); fb.innerHTML=''; return; }
+    var hits = index.filter(function(item){ return item.text.indexOf(q) !== -1; }).slice(0,6);
+    fb.classList.add('show');
+    if(hits.length === 0){
+      fb.innerHTML = '<div>没有找到“' + esc(q) + '”。可试试“林晚”“拆迁款”“账本”或“第 45 章”。</div>';
+      return;
+    }
+    var html = '<div>找到 ' + hits.length + ' 处相关内容：</div><ul>';
+    hits.forEach(function(h){
+      if(h.id){
+        html += '<li><a href="/#' + h.id + '">' + esc(h.text.slice(0,26)) + '</a></li>';
+      } else {
+        html += '<li>' + esc(h.text.slice(0,26)) + '</li>';
+      }
+    });
+    html += '</ul>';
+    fb.innerHTML = html;
+  });
+
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.search-box')) fb.classList.remove('show');
+  });
+
+  // 回到顶部
+  var toTop = document.getElementById('toTop');
+  function onScroll(){
+    if(window.scrollY > 520){ toTop.classList.add('show'); } else { toTop.classList.remove('show'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+    document.getElementById('siteSearch').blur();
+  });
+
+  // 侧栏滚动高亮
+  var links = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var sections = links.map(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  }).filter(Boolean);
+
+  if('IntersectionObserver' in window && sections.length){
+    var obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          links.forEach(function(l){ l.classList.remove('active'); });
+          var hit = links.filter(function(l){ return l.getAttribute('href') === '/#' + en.target.id; })[0];
+          if(hit){
+            hit.classList.add('active');
+            if(window.innerWidth > 1024){
+              var card = hit.closest('.side-card');
+              if(card){ /* 保持 DOM 顺序，仅高亮 */ }
+            }
+          }
+        }
+      });
+    }, {rootMargin: '-' + (118 + 20) + 'px 0px -60% 0px', threshold: 0});
+    sections.forEach(function(s){ obs.observe(s); });
+  }
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "海角 姐弟一世情",
+  "description": "长篇家庭情感故事的章节索引、人物关系、信件与账本原文摘录、时间线与读者讨论档案。",
+  "inLanguage": "zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "林晚和林舟相差几岁，这个年龄差重要吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "相差八岁，林晚1982年生，林舟1990年生。年龄差在1998年搬家时最关键：姐姐十六岁已能帮工，弟弟八岁只能被动跟随。"}
+    },
+    {
+      "@type": "Question",
+      "name": "故事里提到的芦湾镇在现实中存在吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "作者在第1章开头的说明里写明这是虚构地名，参照的是浙东沿海几个渔镇的菜场格局，不对应具体港口。"}
+    },
+    {
+      "@type": "Question",
+      "name": "2014年拆迁款的分配比例是多少？",
+      "acceptedAnswer": {"@type": "Answer", "text": "第45章写的是弟弟七成、姐姐三成，总额42万。母亲那份由两人均摊赡养，账本第118条记有“妈的生活费，各半”。"}
+    },
+    {
+      "@type": "Question",
+      "name": "为什么弟弟的职业在早期版本里是“销售”？",
+      "acceptedAnswer": {"@type": "Answer", "text": "2019年首发版第12章写林舟在城里做销售，2024年整理版改为修船厂技工，作者说明技工身份与家庭背景更贴合。"}
+    },
+    {
+      "@type": "Question",
+      "name": "父亲林建国的结局有明确交代吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "截至第47章仍未直接写明。第47章只出现他1999年的笔迹和一张合影，第21章信件提到“他走那年”但未给年份。"}
+    },
+    {
+      "@type": "Question",
+      "name": "从哪一章开始能看出姐弟关系缓和？",
+      "acceptedAnswer": {"@type": "Answer", "text": "第43章鱼摊换到东头之后。弟弟第一次主动来菜场帮忙收摊，账本记“舟来帮，晚未收钱”。"}
+    }
+  ]
+}
+</script>
+</body>
+              </html>
